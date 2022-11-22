@@ -12,7 +12,7 @@ jobs:
         run: node -v
 
       - name: check python version
-        run: python -v
+        run: pip -v
 
       - name: checkout source code # checkout repo
         uses: actions/checkout@v3
