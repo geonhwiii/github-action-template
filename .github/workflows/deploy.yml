@@ -13,12 +13,10 @@ jobs:
 
       - name: check python version
         run: pip -version
-        
-jobs:
+
   build:
     runs-on: ubuntu-latest
     steps:
-      
       - name: checkout source code # checkout repo
         uses: actions/checkout@v3
 
