@@ -8,6 +8,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: check node version
+        run: node -v
+
+      - name: check python version
+        run: python -v
+
       - name: checkout source code # checkout repo
         uses: actions/checkout@v3
 
