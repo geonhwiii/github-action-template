@@ -1,0 +1,13 @@
+name: ga-workflow
+on: [push]
+
+jobs:
+  build:
+    name: ga-start
+    runs-on: ubuntu18.04
+    steps:
+      - name: checkout source code
+      - uses: actions/checkout@v3
+
+      - name: echo hello
+        run: echo "hello"
