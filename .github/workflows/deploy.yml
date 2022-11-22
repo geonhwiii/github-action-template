@@ -12,7 +12,7 @@ jobs:
         run: node -v
 
       - name: check python version
-        run: pip -version
+        run: pip -V
 
   build:
     runs-on: ubuntu-latest
