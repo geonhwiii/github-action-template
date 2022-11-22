@@ -5,15 +5,20 @@ on:
       - main
 
 jobs:
-  build:
+  pre:
     runs-on: ubuntu-latest
     steps:
       - name: check node version
         run: node -v
 
       - name: check python version
-        run: pip -v
-
+        run: pip -version
+        
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      
       - name: checkout source code # checkout repo
         uses: actions/checkout@v3
 
