@@ -1,7 +1,8 @@
 name: ga-workflow
 on:
   push:
-    - main
+    branches:
+      - main
 
 jobs:
   build:
