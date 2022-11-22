@@ -3,6 +3,7 @@ on:
   push:
     branches: # push event on main
       - main
+      - develop
 
 jobs:
   pre:
